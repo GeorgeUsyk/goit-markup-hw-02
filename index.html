@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css/styles.css">
+    <title>Главная</title>
+</head>
+
+<!--ВЕРХНЯЯ ЛИНИЯ-->
+<body class="body">
+    <header class="header">
+        <a href="./index.html"><span class="logo1">Web</span><span class="logo2">Studio</span></a>
+        <nav>
+            <ul> 
+                <li>
+                    <a class="contacts-data" href="./index.html">Студия</a>
+                </li>
+                <li>
+                    <a class="contacts-data" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li>
+                    <a class="contacts-data" href="./">Контакты</a>
+                    </li>
+                </ul>
+        </nav>
+            <ul>
+                <li>
+                    <a class="contacts-data" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="contacts-data" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+    </header>
+<!--ОСНОВНОЙ БЛОК-->
+    <main>
+        <section class="block1">
+            <h1 class="title1">Эффективные решения <br /> для вашего бизнеса</h1>
+            <button class="buttonlogo" type="button">Заказать услугу</button>
+        </section>
+
+        <!--БЛОК С ТЕКСТОМ-->
+        <section class="block2">
+            <!--у секції , там де є Внимание к деталям , повинен бути заголовок <h2>, його немає по дизайну, 
+                але по структурі він повинен там бути, тож прописуємо 
+                <h2> з будь-яким заголовком, на твій россуд (звичайно щоб було за змістом), 
+                а заголовки у списку вже стануть <h3> . <h2> ми потім приховаємо за допомогою стилів (то пізніше), але він там має бути, 
+                бо це у нас <section> і така секція повинна мати якийсь заголовок -->
+            <h2 class="title2" hidden>Наши сильные стороны</h2>
+            <ul>
+                <li>
+                    <h3 class="title3">Внимание к деталям</h3>
+                    <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                </li>
+                <li>
+                    <h3 class="title3">Пунктуальность</h3>
+                    <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                </li>
+                <li>
+                    <h3 class="title3">Планирование</h3>
+                    <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                </li>
+                <li>
+                    <h3 class="title3">Современные технологии</h3>
+                    <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                </li>
+            </ul>
+        </section>
+
+        <!--Блок Чем мы занимаемся + Картинки-->
+        <section>
+            <h2 class="title2">Чем мы занимаемся</h2>
+            <div>
+                <img src="./image/box1.jpeg" alt="box1" width="370" height="294">
+            </div>
+            <div>
+                <img src="./image/box2.jpeg" alt="box2" width="370" height="294">
+            </div>
+            <div>
+                <img src="./image/box3.jpeg" alt="box3" width="370" height="294">
+            </div>  
+        </section>
+        <!--Наша команда-->
+        <section>
+            <h2 class="title2">Наша команда</h2>
+            <div>
+                <section>
+                    <img src="./image/block2img1.jpeg" alt="block2img1" width="270" height="260">
+                    <h3 class="title3">Игорь Демьяненко</h3>
+                    <p class="text2" lang="en">Product Designer</p>
+                </section>
+                <section>
+                    <img src="./image/block2img2.jpeg" alt="block2img2" width="270" height="260">
+                    <h3 class="title3">Ольга Репина</h3>
+                    <p class="text2" lang="en">Frontend Developer</p>
+                </section>
+                <section>
+                    <img src="./image/block2img3.jpeg" alt="block2img3" width="270" height="260">
+                    <h3 class="title3">Николай Тарасов</h3>
+                    <p class="text2" lang="en">Marketing</p>
+                </section>
+                <section>
+                    <img src="./image/block2img4.jpeg" alt="block2img4" width="270" height="260">
+                    <h3 class="title3">Михаил Ермаков</h3>
+                    <p class="text2" lang="en">UI Designer</p>  
+                </section>
+            </div>  
+        </section>
+    </main>
+    <!--ПОДВАЛ-->
+    <footer class="footer">
+        <a href="./index.html"> <span class="logo3">Web</span><span class="logo4">Studio</span></a>
+        <address  class="address">
+            <p>г. Киев, пр-т Леси Украинки, 26</p>
+            <ul>
+                <li>
+                    <a class="address-data" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="address-data" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </address>
+    </footer>
+</body>
+</html>
