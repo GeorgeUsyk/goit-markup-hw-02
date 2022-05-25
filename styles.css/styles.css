@@ -1,15 +1,3 @@
-/*палитра цветов
-цвет фона главный - Backgroung color: #E5E5E5
-цвет текста главный - #757575
-цвет заголовков - #212121
-цвет текста кнопок: #212121
-цвет текста кнопок при ховере - #2196F3 (сининй) 
-
-цвет лого - верх - #2196F3 (синий) + #000000 (черный)
-цвет лого - низ - #2196F3 (синий) + #FFFFFF (белый)
-цвет адреса в футере - #FFFFFF
-
-*/
 :root {
     --main-back-color: #FFFFFF;
     --main-text-color: #757575;
@@ -21,6 +9,7 @@
     --bottomlogo-color-left: #2196F3;
     --bottomlogo-color-right:#FFFFFF;
     --footer-address-color: #FFFFFF;
+    --address-data-color: rgba(255, 255, 255, 0.6);
 }
 
 .body {
@@ -175,12 +164,12 @@ color: var(--button-hover-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--address-data-color);
     text-decoration: none;
 }
 .address-data:hover,
 .address-data:focus {
-    color: #2196F3;
+    color: var(--top-logo-color-left)
 }
 .button {
     font-family: 'Roboto';
@@ -189,7 +178,7 @@ color: var(--button-hover-color);
     line-height: 1.6;
     cursor: pointer;
     text-align: center;
-    color: #212121;
+    color: var(--button-text-color);
     background: var(--bottomlogo-color-right);
 }
 .button:hover,
